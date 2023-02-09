@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<script src="https://flems.io/flems.html" type="text/javascript" charset="utf-8"></script>
+<style type="text/css" media="screen">
+  html, body, .flems {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+<style>.runtime {display: none!important; opacity:0; width: 0}</style>
+<body>
+  <script type="text/javascript" charset="utf-8">
+    window.Flems(document.body, {
+      middle: 100,
+      shareButton     : false,
+      reloadButton    : true,
+      fileTabs        : true,
+      linkTabs        : false,
+      console: true,
+    "files": [
+    {
+        name: 'wit-findFileName.js',
+        content: `
+function dosyaAdiniBul(kelime) {
+  console.log("dosyaAdiniBul çalışıyor...")
+  // string to array
+  // split
+  // index ile array değeri alma
+}
+
+// input:  "C:/Users/johnsmith/Music/Beethoven_5.mp3"
+// output: "Beethoven_5.mp3"
+
+// ----
+dosyaAdiniBul()
+`
+    }, {
+        name: 'wit-ortalamaBul.js',
+        content: `
+function ortalamaBul(dizi) {
+  console.log("ortalamaBul çalışıyor...")
+  // yeni toplam değişkeni
+  // array uzunluğu ile for döngüsü
+  // toplam değeri bulma
+  // array uzunluğuna bölme
+}
+
+// input:  [248, 194, 123, 131, 87, 21, 194, 37, 154, 15, 165, 11]
+// output: 115
+
+// ----  
+ortalamaBul() 
+`
+      },{
+        name: 'wit-findGreaterAVG.js',
+        content: `
+function ortalamadanBuyukleriBul(dizi) {
+  console.log("ortalamadanBuyukleriBul çalışıyor...")
+  // ortalamayı bul, fonksiyon kullanımı
+  // yeni array oluşturma
+  // array uzunluğu ile for döngüsü
+  // index ile array değeri alma
+  // if kullanımı
+  // array.push
+}
+
+// input:  [248, 194, 123, 131, 87, 21, 194, 37, 154, 15, 165, 11]
+// output: [248, 194, 123, 131, 194, 154, 165]
+
+// ----
+ortalamadanBuyukleriBul()
+ `
+      }, {
+        name: 'wit-bonus.js',
+        content: `
+// ekstra araştırmalı task
+function hangiGun(string) {
+  console.log("hangiGun çalışıyor...")
+  // verilen string ile bir date yaratmak
+  // getDay ile hangi günde olduğunu almak
+  // gün arrayi oluşturup hangi gün olduğunu bulmak
+}
+
+// input:  "1958-04-20"
+// output: "pazar"
+
+// ----
+
+/*
+KONULAR
+değişkenler
+veri türleri: number, string, array
+döngüler: for
+diğer: if, date
+*/
+
+// array kaynağı https://www.w3schools.com/js/js_arrays.asp
+// date kaynağı https://www.w3schools.com/js/js_date_methods.asp
+hangiGun()
+        `
+      }]
+}, 'runtime.html')
+  </script>
+</body>
