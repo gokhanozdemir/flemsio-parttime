@@ -3510,7 +3510,7 @@ export const numbersGreaterAvg = [
 ];
 export const dates = [...data.map(({ hangiGun }) => hangiGun)];
 
-export default data;
+// export default data;
 /* 
 console.log(filenames)
 console.log(numberAvg)
